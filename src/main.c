@@ -12,12 +12,8 @@ const char* CORPUS_GLSL[] = {
 };
 const int CORPUS_GLSL_SIZE = sizeof(CORPUS_GLSL) / sizeof(CORPUS_GLSL[0]);
 
-float timer_start() {
-	return (float)clock()/CLOCKS_PER_SEC;
-}
-void timer_end(float time_start, const char *what) {
-	const float time_end = (float)clock()/CLOCKS_PER_SEC;
-	const unsigned usec = (unsigned)round((time_end - time_start) * 1000.0);
+void timer_end(clock_t time_start, const char *what) {
+	const unsigned usec = (clock() - time_start) * 1000 / CLOCKS_PER_SEC;
 	printf("%s time: %u usec\n", what, usec);
 }
 
@@ -44,7 +40,7 @@ const char** gather_glsl() {
 void bench_naga() {
 	struct naga_converter_t*const converter = naga_init();
 	const char** sources = gather_glsl();
-	const float time_start = timer_start();
+	const clock_t time_start = clock();
 
 	for (int i=0; i<CORPUS_GLSL_SIZE; ++i) {
 		const enum naga_stage_t stage =
@@ -83,7 +79,7 @@ void bench_glslang() {
 		},
 	};
 
-	const float time_start = timer_start();
+	const clock_t time_start = clock();
 	for (int i=0; i<CORPUS_GLSL_SIZE; ++i) {
 		const glslang_stage_t stage =
 			strstr(CORPUS_GLSL[i], ".vert") ? GLSLANG_STAGE_VERTEX :
@@ -130,6 +126,7 @@ void bench_glslang() {
 }
 
 int main() {
+	printf("GLSL -> SPIRV\n");
 	bench_naga();
 	bench_glslang();
 	return 0;

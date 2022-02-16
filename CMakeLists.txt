@@ -48,6 +48,6 @@ target_link_libraries(bench PRIVATE
   # SPIRV-Cross
   spirv-cross-c
   # Naga FFI
-  dl
+  -Wl,--no-as-needed ${CMAKE_DL_LIBS}
   naga_ffi
 )
