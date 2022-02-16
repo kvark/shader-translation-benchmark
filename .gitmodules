@@ -1,0 +1,15 @@
+[submodule "mod/glslang"]
+	path = mod/glslang
+	url = https://github.com/KhronosGroup/glslang
+[submodule "mod/SPIRV-Cross"]
+	path = mod/SPIRV-Cross
+	url = https://github.com/KhronosGroup/SPIRV-Cross
+[submodule "mod/tint"]
+	path = mod/tint
+	url = https://dawn.googlesource.com/tint
+[submodule "mod/naga"]
+	path = mod/naga
+	url = https://github.com/gfx-rs/naga
+[submodule "mod/depot_tools"]
+	path = mod/depot_tools
+	url = https://chromium.googlesource.com/chromium/tools/depot_tools
