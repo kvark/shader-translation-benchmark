@@ -17,7 +17,7 @@ add_subdirectory(mod/glslang glslang)
 add_subdirectory(mod/tint tint)
 add_subdirectory(mod/spirv-cross spirv-cross)
 
-target_include_directories(bench PRIVATE mod/glslang/glslang/Public/)
+target_include_directories(bench PRIVATE mod/glslang/glslang/Include/)
 #target_include_directories(bench PRIVATE mod/tint")
 
 target_link_libraries(bench PRIVATE
