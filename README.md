@@ -1,4 +1,6 @@
 # shader-translation-benchmark
+[![Build Status](https://github.com/kvark/shader-translation-benchmark/workflows/CI/badge.svg)](https://github.com/kvark/shader-translation-benchmark/actions)
+
 Benchmarking tools for shader translation
 
 ## Building

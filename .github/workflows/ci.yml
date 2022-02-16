@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      RUST_BACKTRACE: 1
+      RUST_VERSION: 1.53
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: 'true'
+      - name: build
+        uses: ashutoshvarma/action-cmake-build@master
