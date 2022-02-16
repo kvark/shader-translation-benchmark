@@ -1,0 +1,15 @@
+[package]
+name = "naga-ffi"
+version = "0.1.0"
+authors = ["Dzmitry Malyshau <kvarkus@gmail.com>"]
+edition = "2021"
+publish = false
+
+[profile.release]
+panic = "abort"
+
+[lib]
+crate-type = ["staticlib"]
+
+[dependencies]
+naga = { path = "../mod/naga", features = ["glsl-in", "spv-out"] }

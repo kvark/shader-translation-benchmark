@@ -19,3 +19,6 @@
 [submodule "mod/spirv-headers"]
 	path = mod/spirv-headers
 	url = https://github.com/KhronosGroup/SPIRV-Headers
+[submodule "mod/corrosion"]
+	path = mod/corrosion
+	url = https://github.com/corrosion-rs/corrosion.git

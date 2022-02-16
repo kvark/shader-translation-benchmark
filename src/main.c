@@ -4,12 +4,22 @@
 #include <string.h>
 #include <time.h>
 #include <glslang_c_interface.h>
+#include <naga.h>
 
 const char* CORPUS_GLSL[] = {
 	"bevy-pbr.vert",
 	"bevy-pbr.frag",
 };
 const int CORPUS_GLSL_SIZE = sizeof(CORPUS_GLSL) / sizeof(CORPUS_GLSL[0]);
+
+float timer_start() {
+	return (float)clock()/CLOCKS_PER_SEC;
+}
+void timer_end(float time_start, const char *what) {
+	const float time_end = (float)clock()/CLOCKS_PER_SEC;
+	const unsigned usec = (unsigned)round((time_end - time_start) * 1000.0);
+	printf("%s time: %u usec\n", what, usec);
+}
 
 const char** gather_glsl() {
 	const char** sources = malloc(CORPUS_GLSL_SIZE * sizeof(const char*));
@@ -29,6 +39,26 @@ const char** gather_glsl() {
 		sources[i] = code;
 	}
 	return sources;
+}
+
+void bench_naga() {
+	struct naga_converter_t*const converter = naga_init();
+	const char** sources = gather_glsl();
+	const float time_start = timer_start();
+
+	for (int i=0; i<CORPUS_GLSL_SIZE; ++i) {
+		const enum naga_stage_t stage =
+			strstr(CORPUS_GLSL[i], ".vert") ? NAGA_VERTEX :
+			strstr(CORPUS_GLSL[i], ".frag") ? NAGA_FRAGMENT :
+			NAGA_COMPUTE;
+		naga_convert_glsl_to_spirv(converter, sources[i], stage);
+		size_t size = naga_get_spirv_result_size(converter);
+		assert(size > 0 && "SPIR-V generation failed");
+	}
+
+	timer_end(time_start, "naga");
+	free(sources);
+	naga_exit(converter);
 }
 
 void bench_glslang() {
@@ -53,7 +83,7 @@ void bench_glslang() {
 		},
 	};
 
-	const float time_start = (float)clock()/CLOCKS_PER_SEC;
+	const float time_start = timer_start();
 	for (int i=0; i<CORPUS_GLSL_SIZE; ++i) {
 		const glslang_stage_t stage =
 			strstr(CORPUS_GLSL[i], ".vert") ? GLSLANG_STAGE_VERTEX :
@@ -94,14 +124,13 @@ void bench_glslang() {
 		glslang_program_delete(program);
 	}
 
-	const float time_end = (float)clock()/CLOCKS_PER_SEC;
-	const unsigned usec = (unsigned)round((time_end - time_start) * 1000.0);
-	printf("glslang time: %u usec\n", usec);
+	timer_end(time_start, "glslang");
 	free(sources);
 	glslang_finalize_process();
 }
 
 int main() {
+	bench_naga();
 	bench_glslang();
 	return 0;
 }
