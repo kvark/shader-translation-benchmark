@@ -2,7 +2,7 @@
 	path = mod/glslang
 	url = https://github.com/KhronosGroup/glslang
 [submodule "mod/SPIRV-Cross"]
-	path = mod/SPIRV-Cross
+	path = mod/spirv-cross
 	url = https://github.com/KhronosGroup/SPIRV-Cross
 [submodule "mod/tint"]
 	path = mod/tint
@@ -10,6 +10,12 @@
 [submodule "mod/naga"]
 	path = mod/naga
 	url = https://github.com/gfx-rs/naga
-[submodule "mod/depot_tools"]
-	path = mod/depot_tools
-	url = https://chromium.googlesource.com/chromium/tools/depot_tools
+[submodule "mod/googletest"]
+	path = mod/googletest
+	url = https://github.com/google/googletest.git
+[submodule "mod/SPIRV-Tools"]
+	path = mod/spirv-tools
+	url = https://github.com/KhronosGroup/SPIRV-Tools
+[submodule "mod/spirv-headers"]
+	path = mod/spirv-headers
+	url = https://github.com/KhronosGroup/SPIRV-Headers
