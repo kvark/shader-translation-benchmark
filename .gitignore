@@ -1,2 +1,4 @@
 /build
 /ffi/naga/target
+/visual/target
+/visual/Cargo.lock

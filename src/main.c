@@ -109,7 +109,7 @@ void bench_glslang_g2s() {
     glslang_shader_parse(shader, &input);
     const char *const info_log = glslang_shader_get_info_log(shader);
     if (info_log && strlen(info_log) > 0) {
-      printf("'%s' info log:\n%s", CORPUS_GLSL[i], info_log);
+      fprintf(stderr, "'%s' info log:\n%s", CORPUS_GLSL[i], info_log);
     }
 
     glslang_program_t *const program = glslang_program_create();

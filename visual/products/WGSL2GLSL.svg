@@ -1,0 +1,54 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(72, 164)">
+<g>
+<rect fill="blue" height="7.085422381988459" stroke="black" width="20" x="10" y="-7.085422381988459"/>
+</g>
+<g>
+<rect fill="green" height="127.27272727272727" stroke="black" width="20" x="50" y="-127.27272727272727"/>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="20" x2="20" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="60" x2="60" y1="0" y2="10"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="80" y1="0" y2="0"/>
+<g>
+<text font-size="12" text-anchor="middle" x="20" y="20">
+naga
+</text>
+<text font-size="12" text-anchor="middle" x="60" y="20">
+tint
+</text>
+</g>
+<text font-size="12" text-anchor="middle" x="40" y="30">
+
+</text>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-44.14593384416485" y2="-44.14593384416485"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-88.2918676883297" y2="-88.2918676883297"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-132.43780153249455" y2="-132.43780153249455"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-140"/>
+<g>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
+0
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-44.14593384416485">
+2000
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-88.2918676883297">
+4000
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-132.43780153249455">
+6000
+</text>
+</g>
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -48 -70)" x="-48" y="-82">
+WGSL -> GLSL time usec
+</text>
+</g>
+</g>
+</svg>

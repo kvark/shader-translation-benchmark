@@ -23,3 +23,5 @@ jobs:
           override: true
       - name: build
         uses: ashutoshvarma/action-cmake-build@master
+      - name: check visuals
+        run: cd visual && cargo check

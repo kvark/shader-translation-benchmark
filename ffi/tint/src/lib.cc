@@ -17,7 +17,7 @@ extern "C" size_t tint_convert_spirv_to_wgsl(tint_converter_t *,
   auto program = tint::reader::spirv::Parse(data);
   auto diag = program.Diagnostics();
   for (const auto &msg : diag) {
-    std::cout << msg.message << std::endl;
+    std::cerr << msg.message << std::endl;
   }
 
   tint::writer::wgsl::Options gen_options;
@@ -34,7 +34,7 @@ extern "C" size_t tint_convert_spirv_to_msl(tint_converter_t *,
   auto program = tint::reader::spirv::Parse(data);
   auto diag = program.Diagnostics();
   for (const auto &msg : diag) {
-    std::cout << msg.message << std::endl;
+    std::cerr << msg.message << std::endl;
   }
 
   tint::writer::msl::Options gen_options;
@@ -51,7 +51,7 @@ extern "C" size_t tint_convert_wgsl_to_glsl(tint_converter_t *,
   auto program = tint::reader::wgsl::Parse(&file);
   auto diag = program.Diagnostics();
   for (const auto &msg : diag) {
-    std::cout << msg.message << " at line " << msg.source.range.begin.line
+    std::cerr << msg.message << " at line " << msg.source.range.begin.line
               << std::endl;
   }
 

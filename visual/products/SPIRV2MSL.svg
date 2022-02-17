@@ -1,0 +1,61 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(72, 164)">
+<g>
+<rect fill="blue" height="16.765912399100174" stroke="black" width="13.333333333333334" x="6.666666666666667" y="-16.765912399100174"/>
+</g>
+<g>
+<rect fill="green" height="127.27272727272727" stroke="black" width="13.333333333333334" x="33.333333333333336" y="-127.27272727272727"/>
+</g>
+<g>
+<rect fill="red" height="84.8670107185391" stroke="black" width="13.333333333333334" x="60.00000000000001" y="-84.8670107185391"/>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="13.333333333333334" x2="13.333333333333334" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="40" x2="40" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="66.66666666666667" x2="66.66666666666667" y1="0" y2="10"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="80" y1="0" y2="0"/>
+<g>
+<text font-size="12" text-anchor="middle" x="13.333333333333334" y="20">
+naga
+</text>
+<text font-size="12" text-anchor="middle" x="40" y="20">
+tint
+</text>
+<text font-size="12" text-anchor="middle" x="66.66666666666667" y="20">
+cross
+</text>
+</g>
+<text font-size="12" text-anchor="middle" x="40" y="30">
+
+</text>
+</g>
+<g>
+<g>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-37.05174010850867" y2="-37.05174010850867"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-74.10348021701734" y2="-74.10348021701734"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-111.155220325526" y2="-111.155220325526"/>
+</g>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-140"/>
+<g>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
+0
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-37.05174010850867">
+2000
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-74.10348021701734">
+4000
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-111.155220325526">
+6000
+</text>
+</g>
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -48 -70)" x="-48" y="-82">
+SPIRV -> MSL time usec
+</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,13 @@
+[package]
+name = "visual"
+version = "0.1.0"
+authors = ["Dzmitry Malyshau <kvarkus@gmail.com>"]
+edition = "2021"
+publish = false
+
+[profile.release]
+panic = "abort"
+
+[dependencies]
+plotlib = "0.5"
+sscanf = "0.2"
