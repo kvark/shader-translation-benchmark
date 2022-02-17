@@ -1,7 +1,7 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(72, 364)">
 <g>
-<rect fill="#4285F4" height="9.817409313082813" stroke="black" width="70" x="35" y="-9.817409313082813"/>
+<rect fill="#4285F4" height="9.761088455014614" stroke="black" width="70" x="35" y="-9.761088455014614"/>
 </g>
 <g>
 <rect fill="#FBBC05" height="309.09090909090907" stroke="black" width="70" x="175" y="-309.09090909090907"/>
@@ -27,23 +27,31 @@ glslang
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-106.76899742341287" y2="-106.76899742341287"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-213.53799484682574" y2="-213.53799484682574"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-320.3069922702386" y2="-320.3069922702386"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-61.35190732253058" y2="-61.35190732253058"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-122.70381464506116" y2="-122.70381464506116"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-184.05572196759172" y2="-184.05572196759172"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-245.40762929012232" y2="-245.40762929012232"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-306.7595366126529" y2="-306.7595366126529"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-106.76899742341287">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-61.35190732253058">
+10
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-122.70381464506116">
 20
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-213.53799484682574">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-184.05572196759172">
+30
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-245.40762929012232">
 40
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-320.3069922702386">
-60
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-306.7595366126529">
+50
 </text>
 </g>
 <text font-size="12" text-anchor="middle" transform="rotate(-90 -24 -170)" x="-24" y="-182">

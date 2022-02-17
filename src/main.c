@@ -134,9 +134,10 @@ void bench_glslang_g2s() {
 
 const char *CORPUS_SPIRV[] = {
     //"wgpu-shadow", // fails on Tint
-    "rend3-opaque-frag",
+    //"rend3-opaque-frag", // fails on Tint
+    "veloren-particle-vert",
     "veloren-lod-terrain-frag",
-    "dota-393",
+    //"dota-393", // fails on Tint
 };
 const int CORPUS_SPIRV_SIZE = sizeof(CORPUS_SPIRV) / sizeof(CORPUS_SPIRV[0]);
 

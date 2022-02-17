@@ -10,14 +10,17 @@ extern "C" tint_converter_t *tint_init() { return new tint_converter_t{}; }
 extern "C" void tint_exit(tint_converter_t *converter) { delete converter; }
 
 extern "C" size_t tint_convert_spirv_to_wgsl(tint_converter_t *,
-                                             unsigned int const *spv,
-                                             size_t spv_size) {
-  std::vector<unsigned int> data;
-  data.assign(spv, spv + spv_size); // overhead of C FFI
+                                             uint32_t const *spv,
+                                             size_t word_count) {
+  std::vector<uint32_t> data;
+  data.assign(spv, spv + word_count); // overhead of C FFI
   auto program = tint::reader::spirv::Parse(data);
-  auto diag = program.Diagnostics();
-  for (const auto &msg : diag) {
-    std::cerr << msg.message << std::endl;
+  if (!program.IsValid()) {
+    auto diag = program.Diagnostics();
+    for (const auto &msg : diag) {
+      std::cerr << msg.message << std::endl;
+    }
+    return 0;
   }
 
   tint::writer::wgsl::Options gen_options;
@@ -27,14 +30,17 @@ extern "C" size_t tint_convert_spirv_to_wgsl(tint_converter_t *,
 }
 
 extern "C" size_t tint_convert_spirv_to_msl(tint_converter_t *,
-                                            unsigned int const *spv,
-                                            size_t spv_size) {
-  std::vector<unsigned int> data;
-  data.assign(spv, spv + spv_size); // overhead of C FFI
+                                            uint32_t const *spv,
+                                            size_t word_count) {
+  std::vector<uint32_t> data;
+  data.assign(spv, spv + word_count); // overhead of C FFI
   auto program = tint::reader::spirv::Parse(data);
-  auto diag = program.Diagnostics();
-  for (const auto &msg : diag) {
-    std::cerr << msg.message << std::endl;
+  if (!program.IsValid()) {
+    auto diag = program.Diagnostics();
+    for (const auto &msg : diag) {
+      std::cerr << msg.message << std::endl;
+    }
+    return 0;
   }
 
   tint::writer::msl::Options gen_options;
@@ -49,10 +55,13 @@ extern "C" size_t tint_convert_wgsl_to_glsl(tint_converter_t *,
   auto file = tint::Source::File("unknown", std::string(source));
 
   auto program = tint::reader::wgsl::Parse(&file);
-  auto diag = program.Diagnostics();
-  for (const auto &msg : diag) {
-    std::cerr << msg.message << " at line " << msg.source.range.begin.line
+  if (!program.IsValid()) {
+    auto diag = program.Diagnostics();
+    for (const auto &msg : diag) {
+      std::cerr << msg.message << " at line " << msg.source.range.begin.line
               << std::endl;
+    }
+    return 0;
   }
 
   tint::writer::glsl::Options gen_options;
