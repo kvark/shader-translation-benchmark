@@ -2,6 +2,7 @@
 #include <glslang_c_interface.h>
 #include <math.h>
 #include <naga.h>
+#include <spirv_cross_c.h>
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
@@ -228,6 +229,33 @@ void bench_tint_s2m() {
   tint_exit(converter);
 }
 
+void bench_cross_s2m() {
+  spvc_context context = NULL;
+  spvc_context_create(&context);
+
+  struct tint_converter_t *const converter = tint_init();
+  struct spirv_t *const sources = gather_spv();
+  const clock_t time_start = clock();
+
+  for (int i = 0; i < CORPUS_SPIRV_SIZE; ++i) {
+    spvc_parsed_ir ir = NULL;
+    spvc_compiler compiler_msl = NULL;
+    spvc_compiler_options options = NULL;
+    spvc_context_parse_spirv(context, sources[i].words, sources[i].count, &ir);
+    spvc_context_create_compiler(context, SPVC_BACKEND_MSL, ir,
+                                 SPVC_CAPTURE_MODE_COPY, &compiler_msl);
+    spvc_compiler_create_compiler_options(compiler_msl, &options);
+    spvc_compiler_install_compiler_options(compiler_msl, options);
+    const char *result = NULL;
+    spvc_compiler_compile(compiler_msl, &result);
+    assert(result && "MSL generation failed");
+  }
+
+  timer_end(time_start, "cross");
+  free(sources);
+  spvc_context_destroy(context);
+}
+
 // ------- WGSL -------- //
 
 struct wgsl_source_t {
@@ -314,6 +342,7 @@ int main() {
   printf("SPIRV -> MSL (%d shaders)\n", CORPUS_SPIRV_SIZE);
   bench_naga_s2m();
   bench_tint_s2m();
+  bench_cross_s2m();
 
   return 0;
 }

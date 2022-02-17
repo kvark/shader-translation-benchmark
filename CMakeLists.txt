@@ -38,6 +38,7 @@ target_link_directories(bench PRIVATE ${CMAKE_SOURCE_DIR}/ffi/naga/target/releas
 # Add headers
 target_include_directories(bench PRIVATE
   mod/glslang/glslang/Include/
+  mod/spirv-cross/
   ffi/tint/src/
   ffi/naga/
 )
