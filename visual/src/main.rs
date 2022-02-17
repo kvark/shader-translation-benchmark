@@ -16,10 +16,10 @@ fn main() {
     for line in out_str.lines() {
         if let Ok((name, value)) = scanf!(line, "\t{}: {} us", String, f64) {
             let color = match name.as_str() {
-                "naga" => "blue",
-                "tint" => "green",
-                "cross" => "red",
-                "glslang" => "gray",
+                "naga" => "#4285F4",
+                "tint" => "#34A853",
+                "cross" => "#EA4335",
+                "glslang" => "#FBBC05",
                 _ => "black",
             };
             let bar = plotlib::repr::BarChart::new(value / 1000.0)

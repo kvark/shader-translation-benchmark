@@ -133,8 +133,9 @@ void bench_glslang_g2s() {
 // ------- SPIRV -------- //
 
 const char *CORPUS_SPIRV[] = {
-    //"shadow", // fails on Tint
-    //"opaque.frag.cpu", // fails on Tint
+    //"wgpu-shadow", // fails on Tint
+    "rend3-opaque-frag",
+    "veloren-lod-terrain-frag",
     "dota-393",
 };
 const int CORPUS_SPIRV_SIZE = sizeof(CORPUS_SPIRV) / sizeof(CORPUS_SPIRV[0]);
@@ -266,7 +267,8 @@ struct wgsl_source_t {
 
 const struct wgsl_source_t CORPUS_WGSL[] = {
     {"boids", "cs_main"},
-    {"shadow", "fs_main"},
+    {"wgpu-shadow", "fs_main"},
+    {"vangers-ray", "fs_main"},
 };
 const int CORPUS_WGSL_SIZE = sizeof(CORPUS_WGSL) / sizeof(CORPUS_WGSL[0]);
 

@@ -1,10 +1,10 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(72, 364)">
 <g>
-<rect fill="blue" height="19.001704257573195" stroke="black" width="70" x="35" y="-19.001704257573195"/>
+<rect fill="#4285F4" height="20.37235795718644" stroke="black" width="70" x="35" y="-20.37235795718644"/>
 </g>
 <g>
-<rect fill="green" height="309.09090909090907" stroke="black" width="70" x="175" y="-309.09090909090907"/>
+<rect fill="#34A853" height="309.0909090909091" stroke="black" width="70" x="175" y="-309.0909090909091"/>
 </g>
 <g>
 <g>
@@ -27,27 +27,35 @@ tint
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-104.40496844820439" y2="-104.40496844820439"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-208.80993689640877" y2="-208.80993689640877"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-313.21490534461316" y2="-313.21490534461316"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-57.46786447725372" y2="-57.46786447725372"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-114.93572895450744" y2="-114.93572895450744"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-172.40359343176115" y2="-172.40359343176115"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-229.87145790901488" y2="-229.87145790901488"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-287.3393223862686" y2="-287.3393223862686"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-104.40496844820439">
-2
-</text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-208.80993689640877">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-57.46786447725372">
 4
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-313.21490534461316">
-6
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-114.93572895450744">
+8
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-172.40359343176115">
+12
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-229.87145790901488">
+16
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-287.3393223862686">
+20
 </text>
 </g>
-<text font-size="12" text-anchor="middle" transform="rotate(-90 -12 -170)" x="-12" y="-182">
-WGSL -> GLSL time ms
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -24 -170)" x="-24" y="-182">
+WGSL -> GLSL time (ms)
 </text>
 </g>
 </g>

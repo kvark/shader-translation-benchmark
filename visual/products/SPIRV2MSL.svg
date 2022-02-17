@@ -1,13 +1,13 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(72, 364)">
 <g>
-<rect fill="blue" height="39.8481063759998" stroke="black" width="46.666666666666664" x="23.333333333333332" y="-39.8481063759998"/>
+<rect fill="#4285F4" height="8.081111381915672" stroke="black" width="46.666666666666664" x="23.333333333333332" y="-8.081111381915672"/>
 </g>
 <g>
-<rect fill="green" height="309.09090909090907" stroke="black" width="46.666666666666664" x="116.66666666666667" y="-309.09090909090907"/>
+<rect fill="#34A853" height="309.09090909090907" stroke="black" width="46.666666666666664" x="116.66666666666667" y="-309.09090909090907"/>
 </g>
 <g>
-<rect fill="red" height="193.66437060025734" stroke="black" width="46.666666666666664" x="209.99999999999997" y="-193.66437060025734"/>
+<rect fill="#EA4335" height="53.468583962953936" stroke="black" width="46.666666666666664" x="209.99999999999997" y="-53.468583962953936"/>
 </g>
 <g>
 <g>
@@ -34,27 +34,35 @@ cross
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-85.78709661140968" y2="-85.78709661140968"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-171.57419322281936" y2="-171.57419322281936"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-257.361289834229" y2="-257.361289834229"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-66.29295637338532" y2="-66.29295637338532"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-132.58591274677065" y2="-132.58591274677065"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-198.87886912015597" y2="-198.87886912015597"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-265.1718254935413" y2="-265.1718254935413"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-331.4647818669266" y2="-331.4647818669266"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-85.78709661140968">
-2
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-66.29295637338532">
+20
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-171.57419322281936">
-4
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-132.58591274677065">
+40
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-257.361289834229">
-6
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-198.87886912015597">
+60
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-265.1718254935413">
+80
+</text>
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-331.4647818669266">
+100
 </text>
 </g>
-<text font-size="12" text-anchor="middle" transform="rotate(-90 -12 -170)" x="-12" y="-182">
-SPIRV -> MSL time ms
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -36 -170)" x="-36" y="-182">
+SPIRV -> MSL time (ms)
 </text>
 </g>
 </g>
