@@ -1,13 +1,13 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(72, 364)">
 <g>
-<rect fill="#4285F4" height="3.804364563184392" stroke="black" width="46.666666666666664" x="23.333333333333332" y="-3.804364563184392"/>
+<rect fill="#4285F4" height="4.067280594891615" stroke="black" width="46.666666666666664" x="23.333333333333332" y="-4.067280594891615"/>
 </g>
 <g>
 <rect fill="#34A853" height="309.09090909090907" stroke="black" width="46.666666666666664" x="116.66666666666667" y="-309.09090909090907"/>
 </g>
 <g>
-<rect fill="#EA4335" height="39.691538801086956" stroke="black" width="46.666666666666664" x="209.99999999999997" y="-39.691538801086956"/>
+<rect fill="#EA4335" height="37.14849361470204" stroke="black" width="46.666666666666664" x="209.99999999999997" y="-37.14849361470204"/>
 </g>
 <g>
 <g>
@@ -34,22 +34,22 @@ cross
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-99.72122052907973" y2="-99.72122052907973"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-199.44244105815946" y2="-199.44244105815946"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-299.1636615872392" y2="-299.1636615872392"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-99.62720379403832" y2="-99.62720379403832"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-199.25440758807665" y2="-199.25440758807665"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-298.881611382115" y2="-298.881611382115"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-99.72122052907973">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-99.62720379403832">
 40
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-199.44244105815946">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-199.25440758807665">
 80
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-299.1636615872392">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-298.881611382115">
 120
 </text>
 </g>

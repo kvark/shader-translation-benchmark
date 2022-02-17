@@ -22,7 +22,7 @@ On Windows... use Linux for development.
 ```bash
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=RelWithDebugInfo
+cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
 make -j
 ```
 

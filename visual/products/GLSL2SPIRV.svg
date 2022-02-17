@@ -1,10 +1,10 @@
 <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
 <g transform="translate(72, 364)">
 <g>
-<rect fill="#4285F4" height="9.761088455014614" stroke="black" width="70" x="35" y="-9.761088455014614"/>
+<rect fill="#4285F4" height="10.296882910248065" stroke="black" width="70" x="35" y="-10.296882910248065"/>
 </g>
 <g>
-<rect fill="#FBBC05" height="309.09090909090907" stroke="black" width="70" x="175" y="-309.09090909090907"/>
+<rect fill="#FBBC05" height="309.0909090909091" stroke="black" width="70" x="175" y="-309.0909090909091"/>
 </g>
 <g>
 <g>
@@ -27,30 +27,30 @@ glslang
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-61.35190732253058" y2="-61.35190732253058"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-122.70381464506116" y2="-122.70381464506116"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-184.05572196759172" y2="-184.05572196759172"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-245.40762929012232" y2="-245.40762929012232"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-306.7595366126529" y2="-306.7595366126529"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-61.47392782237651" y2="-61.47392782237651"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-122.94785564475302" y2="-122.94785564475302"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-184.42178346712953" y2="-184.42178346712953"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-245.89571128950604" y2="-245.89571128950604"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-307.3696391118826" y2="-307.3696391118826"/>
 </g>
 <line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-61.35190732253058">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-61.47392782237651">
 10
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-122.70381464506116">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-122.94785564475302">
 20
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-184.05572196759172">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-184.42178346712953">
 30
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-245.40762929012232">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-245.89571128950604">
 40
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-306.7595366126529">
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-307.3696391118826">
 50
 </text>
 </g>
