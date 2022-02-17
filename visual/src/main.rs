@@ -22,7 +22,7 @@ fn main() {
                 "glslang" => "gray",
                 _ => "black",
             };
-            let bar = plotlib::repr::BarChart::new(value)
+            let bar = plotlib::repr::BarChart::new(value / 1000.0)
                 .style(&plotlib::style::BoxStyle::new().fill(color))
                 .label(name);
 
@@ -32,7 +32,7 @@ fn main() {
                 view: view.add(bar),
             });
         } else if let Ok((from, to, _)) = scanf!(line, "{} -> {} ({})", String, String, str) {
-            let name = format!("{} -> {} time usec", from, to);
+            let name = format!("{} -> {} time (ms)", from, to);
             sources.push(ChartSource {
                 path: from..to,
                 view: plotlib::view::CategoricalView::new().y_label(&name),
@@ -46,8 +46,8 @@ fn main() {
         let chart_name = format!("products/{}2{}.svg", source.path.start, source.path.end);
         println!("Saving {}", chart_name);
         plotlib::page::Page::single(&source.view)
-            .dimensions(200, 200)
+            .dimensions(400, 400)
             .save(&chart_name)
-            .expect("saving svg");
+            .expect("saving png");
     }
 }

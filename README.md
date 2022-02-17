@@ -9,7 +9,9 @@ Benchmarking tools for shader translators:
 
 ## Results
 
-![GLSL -> SPIRV](visual/products/GLSL2SPIRV.svg) ![WGSL -> GLSL](visual/products/WGSL2GLSL.svg) ![SPIRV -> MSL](visual/products/SPIRV2MSL.svg)
+These are some of the conversion paths, in ms (lower is better):
+
+<img width=30% src="visual/products/GLSL2SPIRV.svg" alt="GLSL->SPIRV"><img width=30% src="visual/products/WGSL2GLSL.svg" alt="WGSL->GLSL"><img width=30% src="visual/products/SPIRV2MSL.svg" alt="SPIRV->MSL">
 
 ## Building
 

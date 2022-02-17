@@ -1,4 +1,4 @@
-.PHONY: fmt
+.PHONY: run fmt chart
 
 run:
 	build/bench
@@ -8,5 +8,5 @@ fmt:
 	cd visual && cargo fmt
 	clang-format -i src/main.c ffi/tint/src/lib.cc
 
-chart.svg:
+chart:
 	cd visual && cargo run

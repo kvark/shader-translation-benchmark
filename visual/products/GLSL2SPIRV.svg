@@ -1,61 +1,61 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-<g transform="translate(72, 164)">
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+<g transform="translate(72, 364)">
 <g>
-<rect fill="blue" height="4.477554029410623" stroke="black" width="20" x="10" y="-4.477554029410623"/>
+<rect fill="blue" height="10.897032823145608" stroke="black" width="70" x="35" y="-10.897032823145608"/>
 </g>
 <g>
-<rect fill="gray" height="127.27272727272727" stroke="black" width="20" x="50" y="-127.27272727272727"/>
+<rect fill="gray" height="309.0909090909091" stroke="black" width="70" x="175" y="-309.0909090909091"/>
 </g>
 <g>
 <g>
-<line stroke="black" stroke-width="1" x1="20" x2="20" y1="0" y2="10"/>
-<line stroke="black" stroke-width="1" x1="60" x2="60" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="70" x2="70" y1="0" y2="10"/>
+<line stroke="black" stroke-width="1" x1="210" x2="210" y1="0" y2="10"/>
 </g>
-<line stroke="black" stroke-width="1" x1="0" x2="80" y1="0" y2="0"/>
+<line stroke="black" stroke-width="1" x1="0" x2="280" y1="0" y2="0"/>
 <g>
-<text font-size="12" text-anchor="middle" x="20" y="20">
+<text font-size="12" text-anchor="middle" x="70" y="20">
 naga
 </text>
-<text font-size="12" text-anchor="middle" x="60" y="20">
+<text font-size="12" text-anchor="middle" x="210" y="20">
 glslang
 </text>
 </g>
-<text font-size="12" text-anchor="middle" x="40" y="30">
+<text font-size="12" text-anchor="middle" x="140" y="30">
 
 </text>
 </g>
 <g>
 <g>
 <line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-0" y2="-0"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-25.8668632548274" y2="-25.8668632548274"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-51.7337265096548" y2="-51.7337265096548"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-77.60058976448221" y2="-77.60058976448221"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-103.4674530193096" y2="-103.4674530193096"/>
-<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-129.33431627413702" y2="-129.33431627413702"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-62.87958928531799" y2="-62.87958928531799"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-125.75917857063598" y2="-125.75917857063598"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-188.63876785595397" y2="-188.63876785595397"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-251.51835714127196" y2="-251.51835714127196"/>
+<line stroke="black" stroke-width="1" x1="0" x2="-10" y1="-314.39794642658995" y2="-314.39794642658995"/>
 </g>
-<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-140"/>
+<line stroke="black" stroke-width="1" x1="0" x2="0" y1="0" y2="-340"/>
 <g>
 <text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-0">
 0
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-25.8668632548274">
-10000
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-62.87958928531799">
+10
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-51.7337265096548">
-20000
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-125.75917857063598">
+20
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-77.60058976448221">
-30000
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-188.63876785595397">
+30
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-103.4674530193096">
-40000
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-251.51835714127196">
+40
 </text>
-<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-129.33431627413702">
-50000
+<text dominant-baseline="middle" font-size="12" text-anchor="end" x="-15" y="-314.39794642658995">
+50
 </text>
 </g>
-<text font-size="12" text-anchor="middle" transform="rotate(-90 -60 -70)" x="-60" y="-82">
-GLSL -> SPIRV time usec
+<text font-size="12" text-anchor="middle" transform="rotate(-90 -24 -170)" x="-24" y="-182">
+GLSL -> SPIRV time ms
 </text>
 </g>
 </g>
