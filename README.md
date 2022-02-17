@@ -10,9 +10,12 @@ Benchmarking tools for shader translators:
 ## Results
 
 ```
-GLSL -> SPIRV
-naga time: 1 usec
-glslang time: 49 usec
+GLSL -> SPIRV (2 shaders)
+        naga: 1554 us
+        glslang: 51792 us
+SPIRV -> MSL (1 shaders)
+        naga: 904 us
+        tint: 6938 us
 ```
 
 ## Building

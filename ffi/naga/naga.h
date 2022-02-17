@@ -8,5 +8,9 @@ enum naga_stage_t {
 
 extern struct naga_converter_t* naga_init();
 extern void naga_exit(struct naga_converter_t*);
-extern void naga_convert_glsl_to_spirv(struct naga_converter_t*, char const*, enum naga_stage_t);
-extern size_t naga_get_spirv_result_size(struct naga_converter_t const*);
+// generate SPIR-V and report its size
+extern size_t naga_convert_glsl_to_spirv(struct naga_converter_t*, char const*, enum naga_stage_t);
+// generate WGSL and report its length
+extern size_t naga_convert_spirv_to_wgsl(struct naga_converter_t*, unsigned const*, size_t);
+// generate MSL and report its length
+extern size_t naga_convert_spirv_to_msl(struct naga_converter_t*, unsigned const*, size_t);

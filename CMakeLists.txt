@@ -38,7 +38,7 @@ target_link_directories(bench PRIVATE ${CMAKE_SOURCE_DIR}/ffi/naga/target/releas
 # Add headers
 target_include_directories(bench PRIVATE
   mod/glslang/glslang/Include/
-  #ffi/tint/src/
+  ffi/tint/src/
   ffi/naga/
 )
 
@@ -47,11 +47,10 @@ target_link_libraries(bench PRIVATE
   # Glslang
   glslang OSDependent OGLCompiler HLSL glslang SPIRV
   # Tint
-  libtint tint-ffi
+  tint-ffi libtint
   # SPIRV-Cross
   spirv-cross-c
   # Naga FFI
-  #-Wl,--no-as-needed ${CMAKE_DL_LIBS}
   naga_ffi
-  ${CMAKE_DL_LIBS}
+  ${CMAKE_DL_LIBS} # has to go after Rust dependencies
 )
