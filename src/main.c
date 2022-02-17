@@ -230,19 +230,90 @@ void bench_tint_s2m() {
 
 // ------- WGSL -------- //
 
+struct wgsl_source_t {
+  char const *source;
+  // example entry point
+  char const *entry_point;
+};
+
+const struct wgsl_source_t CORPUS_WGSL[] = {
+    {"boids", "cs_main"},
+    {"shadow", "fs_main"},
+};
+const int CORPUS_WGSL_SIZE = sizeof(CORPUS_WGSL) / sizeof(CORPUS_WGSL[0]);
+
+const char **gather_wgsl() {
+  const char **sources = malloc(CORPUS_WGSL_SIZE * sizeof(const char *));
+  char path[256] = {};
+  for (int i = 0; i < CORPUS_WGSL_SIZE; ++i) {
+    sprintf(path, "corpus/wgsl/%s.wgsl", CORPUS_WGSL[i].source);
+    FILE *file = fopen(path, "rb");
+    assert(file && "Corpus file not found");
+    fseek(file, 0, SEEK_END);
+    long size = ftell(file);
+    fseek(file, 0, SEEK_SET);
+    char *code = malloc(size + 1);
+    int count = fread(code, size, 1, file);
+    assert(count && "Unable to read the corpus file");
+    code[size] = 0;
+    fclose(file);
+    sources[i] = code;
+  }
+  return sources;
+}
+
+void bench_naga_w2g() {
+  struct naga_converter_t *const converter = naga_init();
+  const char **sources = gather_wgsl();
+  const clock_t time_start = clock();
+
+  for (int i = 0; i < CORPUS_WGSL_SIZE; ++i) {
+    size_t size = naga_convert_wgsl_to_glsl(converter, sources[i],
+                                            CORPUS_WGSL[i].entry_point);
+    assert(size > 0 && "GLSL generation failed");
+  }
+
+  timer_end(time_start, "naga");
+  free(sources);
+  naga_exit(converter);
+}
+
+void bench_tint_w2g() {
+  struct tint_converter_t *const converter = tint_init();
+  const char **sources = gather_wgsl();
+  const clock_t time_start = clock();
+
+  for (int i = 0; i < CORPUS_WGSL_SIZE; ++i) {
+    size_t size = tint_convert_wgsl_to_glsl(converter, sources[i],
+                                            CORPUS_WGSL[i].entry_point);
+    assert(size > 0 && "GLSL generation failed");
+  }
+
+  timer_end(time_start, "tint");
+  free(sources);
+  tint_exit(converter);
+}
+
 // ------- Main -------- //
 
 int main() {
   printf("GLSL -> SPIRV (%d shaders)\n", CORPUS_GLSL_SIZE);
   bench_naga_g2s();
   bench_glslang_g2s();
-  /* not very useful?
-  printf("SPIRV -> WGSL (%d shaders)\n", CORPUS_SPIRV_SIZE);
-  bench_naga_s2w();
-  bench_tint_s2w();
-  */
+
+  printf("WGSL -> GLSL (%d shaders)\n", CORPUS_WGSL_SIZE);
+  bench_naga_w2g();
+  bench_tint_w2g();
+
+  if (!"very_useful") {
+    printf("SPIRV -> WGSL (%d shaders)\n", CORPUS_SPIRV_SIZE);
+    bench_naga_s2w();
+    bench_tint_s2w();
+  }
+
   printf("SPIRV -> MSL (%d shaders)\n", CORPUS_SPIRV_SIZE);
   bench_naga_s2m();
   bench_tint_s2m();
+
   return 0;
 }

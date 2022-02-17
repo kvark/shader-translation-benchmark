@@ -14,3 +14,5 @@ extern size_t naga_convert_glsl_to_spirv(struct naga_converter_t*, char const*, 
 extern size_t naga_convert_spirv_to_wgsl(struct naga_converter_t*, unsigned const*, size_t);
 // generate MSL and report its length
 extern size_t naga_convert_spirv_to_msl(struct naga_converter_t*, unsigned const*, size_t);
+// generate GLSL and report its length
+extern size_t naga_convert_wgsl_to_glsl(struct naga_converter_t*, char const*, char const*);

@@ -11,11 +11,14 @@ Benchmarking tools for shader translators:
 
 ```
 GLSL -> SPIRV (2 shaders)
-        naga: 1554 us
-        glslang: 51792 us
+        naga: 1692 us
+        glslang: 49548 us
+WGSL -> GLSL (2 shaders)
+        naga: 315 us
+        tint: 5712 us
 SPIRV -> MSL (1 shaders)
-        naga: 904 us
-        tint: 6938 us
+        naga: 895 us
+        tint: 6957 us
 ```
 
 ## Building

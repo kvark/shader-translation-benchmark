@@ -11,5 +11,6 @@ panic = "abort"
 [lib]
 crate-type = ["staticlib"]
 
-[dependencies]
-naga = { path = "../../mod/naga", features = ["glsl-in", "spv-in", "spv-out", "wgsl-out", "msl-out"] }
+[dependencies.naga]
+path = "../../mod/naga"
+features = ["glsl-in", "spv-in", "wgsl-in", "spv-out", "wgsl-out", "msl-out", "glsl-out"]
